@@ -1,13 +1,195 @@
+/* === CSS RESET – đặt đầu tiên trong style.css === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* === BASE === */
 body {
-    font-family: Arial, sans-serif ; 
-    background-color:rgb(12, 65, 35);
-    padding: 20px;
-}
-h1 {
-    color: #333;
-    text-align : center ;
-}
-p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #212f44;
     line-height: 1.6;
-    max-width: 700px;
+}
+
+/* === SELECTORS === */
+
+/* Type selector */
+p {
+    color: #101111;
+    line-height: 1.7;
+}
+
+/* Class selector */
+.highlight {
+    background: #fef3c7;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* ID selector */
+#main-title {
+    font-size: 2rem;
+    color: #366de4;
+}
+
+/* Pseudo-class */
+a {
+    color: #1d3d52;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+/* Descendant selector */
+nav a {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* === HEADER === */
+header {
+    background-color: #3061ca;
+    padding: 16px 32px;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #93c5fd;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* === MAIN === */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+/* === SECTION === */
+section {
+    margin-bottom: 24px;
+}
+
+/* === CARD === */
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+}
+
+/* === FORM === */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1f3666;
+}
+
+/* Các label trong form */
+form label {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 6px;
+}
+
+/* Các ô nhập liệu */
+form input,
+form select,
+form textarea {
+    padding: 8px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Số điện thoại và trường đại học nằm hàng dưới */
+#phone {
+    margin-right: 30px;
+}
+
+#university {
+    width: 220px;
+}
+
+/* Textarea */
+textarea {
+    vertical-align: top;
+}
+
+/* Button */
+button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e2e8f0;
+}
+
+/* === TABLE === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e2e8f0;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #1d56b3;
+    color: #94a3b8;
+    text-align: center;
+    padding: 24px 32px;
+    margin-top: 48px;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+footer address {
+    font-style: normal;
 }

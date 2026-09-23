@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Văn Hòa - liên hệ</title>
+    <meta name="description" content="Gửi thông tin liên hệ đến Nguyễn Văn Hòa để trao đổi về học tập , hỗ trợ kỹ thuật , trường đại học và các nội dung khác" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL+Guides&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Nguyễn Văn Hoa </h1>
+        <p>Trang liên hệ tôi</p>
+       </header>
+       <nav> 
+        <ul>
+            <li> <a href= "index.html"> Trang chủ </a></li>
+            <li> <a href= "about.html"> Giới thiệu</a></li>
+            <li> <a href= "contact.html"> liên hệ</a></li>
+        </ul>
+       </nav>
+       <main> 
+        <section>
+            <h2>Liên hệ</h2>
+            <form action="#" method="POST"> 
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    <label for="fullname"> Họ và tên: *</label>
+                    <input type="text" id ="fullname" name="fullname"
+                    placeholder="Nhập họ và tên đầy đủ"
+                    required minlength="2" maxlength="100"><br>
+
+                    <label for="email"> Email: *</label>
+                    <input type="text" id="email" name="email" 
+                    placeholder="example@gmail.com" required ><br>
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="nhập số điện thoại"
+                    pattern="[0-9]{10,11}"
+                    title="Nhập 10-11 chữ số">
+
+                    <label for="ngay">Ngày sinh</label>
+                    <input type="date" id="ngay" name="ngay" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Gợi ý Trường Đại học</legend>
+                    <label for="university">Trường</label>
+                    <select id="university" name="university">
+                        <option value="">Chọn trường</option>
+                        <option value="GDU">Đại học Gia Định</option>
+                        <option value="DHBK">Đại học Bách Khoa TP.HCM</option>
+                        <option value="UTE">Đại học Công nghệ Kỹ thuật TP.HCM</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+                    <label for="subject"> chủ đề </label>
+                    <select id="subject" name="subject">
+                        <option value="">chọn chủ đề</option> 
+                        <option value="suppert"> Hỗ trợ kỹ thuật</option>
+                        <option value="study"> Học tập / trao đổi</option>
+                        <option value="orther">Khác</option>
+                    </select>
+
+                    <label> Ưa tiên liên hệ qua: </label>
+                    <fieldset>
+                        <legend>Kênh liên lạc</legend>
+                        <input type="radio" id="via-email" name="contact-via" value="email" checked>
+                        <label for="via-email">Email</label>
+                        <input type="radio" id="via-phone" name="contact-via" value="phone">
+                        <label for="via-phone">số điện thoại</label>
+                        <input type="radio" id="via-zalo" name="contact-via" value="zalo">
+                        <label for="via-zalo">zalo</label>
+                    </fieldset>
+
+                    <label for="message">tin nhắn: *</label>
+                    <textarea id="message" name="message" rows="5"
+                    placeholder="Nhập nội dung tin nhắn..."
+                    required minlength="10"
+                    maxlength="500">
+                    </textarea>
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        Tôi đồng ý với <a href="#">điều khoản sử dụng</a> *
+                    </label>
+                </fieldset>
+                <button type="submit">Gửi tin nhắn</button>
+                <button type="reset">Xóa và nhập lại</button>
+            </form>
+        </section>
+       </main>
+       <footer>
+        <address>
+            <a href ="mailto:hoa1981st@gmail.com">Email: hoa1981st@gmail.com</a> <br>
+            <a href ="tel:0339292043">Di động: 0339292043</a>
+        </address>
+        <time datetime ="2026-06-01">Ngày tạo: 01/06/2026</time>
+       </footer>
+    </body>
+</head>
